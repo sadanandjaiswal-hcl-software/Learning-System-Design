@@ -27,3 +27,6 @@
 4. **I –** Interface Segregation Principle
 
 5. **D –** Dependency Inversion Principle
+
+## Principle of Least Knowledge
+every class should talk to its immidiate friend not to friend of friend
