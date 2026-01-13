@@ -100,5 +100,20 @@ every class should talk to its immidiate friend not to friend of friend
 
 **Example**: Event listeners, Stock price update
 
+**Note**: Observer pattern works well in small systems.
+At scale, we replace it with event-driven Pub-Sub using Kafka or similar systems.
 
 
+## 6. Decorator Design Pattern
+**Definition**: Decorator Pattern attaches additional responsibilites to an object dynamically, Decorator provides a flexible alternative to subclassing for extending functionality.
+
+- Uses composition instead of inheritance
+- Adds responsibilities at runtime
+- Avoids subclass explosion
+- Supports multiple combinations of behaviors
+
+**Key Idea**: Wrap an object to add new behavior
+
+**Example**: 
+- Text formatting (Bold, Italic, Underline)
+- Notification system (Logging, Encryption, Retry, Rate Limiting)
