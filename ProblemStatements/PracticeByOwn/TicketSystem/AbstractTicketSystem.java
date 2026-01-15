@@ -1,5 +1,4 @@
 package ProblemStatements.PracticeByOwn.TicketSystem;
-import java.util.*;
 
 // Enums
 enum Priority {

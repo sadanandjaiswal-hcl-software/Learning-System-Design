@@ -1,9 +1,5 @@
 package DesignPatternCode;
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-
 interface NotificationChannel {
     void notify(String message);
 }

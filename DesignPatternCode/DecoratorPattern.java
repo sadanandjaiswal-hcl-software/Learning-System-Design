@@ -1,9 +1,5 @@
 package DesignPatternCode;
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-
 // Component
 interface Text{
     String print();

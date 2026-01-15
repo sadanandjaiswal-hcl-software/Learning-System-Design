@@ -1,7 +1,3 @@
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-
 // ************************ Abstraction and Encapsulation************************
 // class Car{
 // class should be abstract
