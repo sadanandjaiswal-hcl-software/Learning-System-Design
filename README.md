@@ -162,3 +162,20 @@ At scale, we replace it with event-driven Pub-Sub using Kafka or similar systems
 
 **Key Difference**:
 - **Command vs Strategy** → Command represents *what action to perform*, Strategy represents *how to perform an algorithm*
+
+
+## 8. Adapter Design Pattern
+**Definition**: Adapter Pattern allows incompatible interfaces to work together by converting one interface into another that the client expects.
+
+- Resolves interface incompatibility
+- Works at system or integration boundaries
+- Does not change existing code
+- Translates interface, not business logic
+
+**Key Idea**: Wrap an incompatible object to make it usable by the client
+
+**Example**:
+- Power socket adapter (US plug → EU socket)
+- Payment SDK adapter (pay(int) → makePayment(BigDecimal, Currency))
+- Legacy service integration with new system
+
