@@ -179,3 +179,19 @@ At scale, we replace it with event-driven Pub-Sub using Kafka or similar systems
 - Payment SDK adapter (pay(int) → makePayment(BigDecimal, Currency))
 - Legacy service integration with new system
 
+
+## 9. Facade Design Pattern
+**Definition**: Facade pattern provides a simplified, unified interface to a set of complex subsystem.
+It hides the complexity of the system and expose only what is needed.
+
+- Hides subsystem complexity
+- Works at module or subsystem boundaries
+- Does not change subsystem behavior
+- Orchestrates calls, not business rules
+
+**Key Idea**: Wrap a complex subsystem with a simple entry point so clients interact with *one interface instead of many*
+
+**Example**:
+- Home theater system (DVD player + projector + sound system → `watchMovie()`)
+- E-commerce checkout facade (inventory + pricing + payment + shipping → `placeOrder()`)
+- Travel booking facade (flight + hotel + cab → `bookTrip()`)
