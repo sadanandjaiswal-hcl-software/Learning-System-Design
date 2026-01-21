@@ -130,38 +130,12 @@ At scale, we replace it with event-driven Pub-Sub using Kafka or similar systems
 
 **Key Idea**: Represent an action as an object and execute it via an invoker
 
-**Core Participants**:
-- **Command** – declares execution interface (`execute()`, optional `undo()`)
-- **ConcreteCommand** – binds a receiver and implements action
-- **Receiver** – performs actual business logic
-- **Invoker** – triggers command execution
-- **Client** – creates and wires commands with receivers
-
 **Example**:
 - Remote control (Button → Command → Appliance)
 - Menu / toolbar actions in editors
 - Job queues and task schedulers
 - Transactional operations with undo/redo
 - Ticket/SLA actions (`CloseTicketCommand`, `RecalculateSlaCommand`)
-
-**When to Use**:
-- Actions need to be decoupled from callers
-- Undo/redo or rollback is required
-- Commands must be queued, logged, or retried
-- UI actions (buttons, menus) trigger business logic
-
-**When NOT to Use**:
-- Only one simple action exists
-- No undo/redo, logging, or variation needed
-- Direct method call is sufficient (avoid over-engineering)
-
-**Common Combinations**:
-- **Command + Memento** → undo/redo with state restoration
-- **Command + Composite** → macro commands
-- **Command + Queue** → async job processing
-
-**Key Difference**:
-- **Command vs Strategy** → Command represents *what action to perform*, Strategy represents *how to perform an algorithm*
 
 
 ## 8. Adapter Design Pattern
