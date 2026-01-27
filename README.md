@@ -198,3 +198,31 @@ It allows clients to treat individual objects and compositions of objects *unifo
 - File system (File + Folder → `getSize()`, `delete()`)
 - UI components (Button + Panel → `render()`)
 - Organization hierarchy (Employee + Manager → `getSalary()`)
+
+
+## 11. Template Method Design Pattern
+
+**Definition**:  
+Template Method defines the *skeleton of an algorithm* in a base class, but lets subclasses override specific steps **without changing the overall structure**.
+
+- Defines algorithm steps in a base (abstract) class  
+- Allows subclasses to customize certain steps  
+- Promotes code reuse  
+- Enforces a fixed order of execution  
+- Uses inheritance and method overriding  
+
+**Key Idea**: Fix the algorithm structure, but allow subclasses to redefine specific steps.
+
+### Examples
+- **Game Flow**
+  - `play()` → initialize → start → end  
+  - Chess and Football override steps differently
+
+- **Data Processing**
+  - `processData()` → read → transform → save  
+  - CSV and XML processors customize steps
+
+- **Beverage Preparation**
+  - `makeDrink()` → boil → brew → pour → addCondiments  
+  - Tea vs Coffee differ in brewing and condiments
+
