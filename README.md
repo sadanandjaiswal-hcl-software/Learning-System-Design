@@ -36,6 +36,17 @@ every class should talk to its immidiate friend not to friend of friend
 
 # Design Patterns
 
+## Foundational Design Pattern
+1. Strategy Design Pattern
+2. Factory Design Pattern
+3. Abstract Factory Design Pattern
+4. Singleton Design Pattern
+5. Observer Design Pattern
+6. Decorator Design Pattern
+7. Command Design Pattern
+8. Adapter Design Pattern
+9. Facade Design Pattern
+
 ## 1. Strategy Design Pattern
 **Defination** : Define family of algorithms, put each one in seperate class, and make them interchangeable at runtime.
 
@@ -169,3 +180,21 @@ It hides the complexity of the system and expose only what is needed.
 - Home theater system (DVD player + projector + sound system → `watchMovie()`)
 - E-commerce checkout facade (inventory + pricing + payment + shipping → `placeOrder()`)
 - Travel booking facade (flight + hotel + cab → `bookTrip()`)
+
+
+## 10. Composite Design Pattern
+
+**Definition**: Composite pattern lets you compose objects into tree structures to represent part–whole hierarchies.
+It allows clients to treat individual objects and compositions of objects *uniformly*.
+
+- Treats single objects and groups the same way  
+- Represents hierarchical (tree) structures  
+- Simplifies client code by avoiding type checks  
+- Uses recursion to operate on object trees  
+
+**Key Idea**: Work with *individual objects and collections of objects through a common interface*
+
+**Example**:
+- File system (File + Folder → `getSize()`, `delete()`)
+- UI components (Button + Panel → `render()`)
+- Organization hierarchy (Employee + Manager → `getSalary()`)
